@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzzGenerator</title>
+    <link rel="stylesheet" th:href="@{/fizzbuzz.css}" />
+</head>
+<body>
+<div class="titre">
+<h1> FizzBuzzGenerator</h1>
+</div>
+<div class="stream" id="updateBlock"><!-- fragment affichant le flux de données SSE-->
+    <h1 data-th-each="update : ${updates}" >
+        [[${update}]]
+    </h1>
+</div>
+
+<!-- script js nécessaire pour mettre un event listeneer pour ecouter le flux -->
+<script src="/fizzbuzz.js"></script>
+</body>
+</html>

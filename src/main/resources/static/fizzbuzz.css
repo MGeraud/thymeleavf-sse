@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    margin: 0;
+
+}
+
+div.titre{
+    margin: 0 ;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+div.stream{
+    margin: 0 ;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+
